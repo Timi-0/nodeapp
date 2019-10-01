@@ -7,11 +7,15 @@ stage('Check Out code from git'){
           }
                                  }
             
-        stage('check npm version'){
+        stage('check npm version and setup'){
             steps{
             sh 'npm --version'
              sh 'ls -altr'
+                sh 'npm config list'
             }
         }
+        
     }
+    
+    
     }
