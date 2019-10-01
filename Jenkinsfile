@@ -21,6 +21,17 @@ stages {
                 serverId: "MYARTIFACTORY",
                 repo: "npm-local"
             )
+            
+rtNpmInstall (
+    // Optional tool name from Jenkins configuration
+    //tool: ,
+    // Optional path to the project root. If not set, the root of the workspace is assumed as the root project path.
+   // path: 'npm-example',
+    // Optional npm flags or arguments.
+    args: '--verbose',
+    resolverId: 'NPM_RESOLVER'
+ 
+)
     }
             }        
     stage('check npm version and setup'){
