@@ -31,7 +31,7 @@ rtNpmInstall (
  //   args: '--verbose',
     resolverId: 'NPM_RESOLVER'
  
-//)
+)
     }
             }        
     stage('check npm version and setup'){
