@@ -15,6 +15,23 @@ stage('Check Out code from git'){
             }
         }
         
+                stage ('Artifactory configuration') {
+            steps {
+                
+                rtNpmResolver (
+                    id: "NPM_RESOLVER",
+                    serverId: "MYARTIFACTORY",
+                    repo: "npm-remote"
+                )
+
+                rtNpmDeployer (
+                    id: "NPM_DEPLOYER",
+                    serverId: "MYARTIFACTORY",
+                    repo: "npm-local"
+                )
+            }
+        }
+        
     }
     
     
