@@ -24,9 +24,9 @@ stages {
             
 rtNpmInstall (
     // Optional tool name from Jenkins configuration
-    //tool: ,
+    tool: NPM_TOOL,
     // Optional path to the project root. If not set, the root of the workspace is assumed as the root project path.
-   // path: 'npm-example',
+    path: './',
     // Optional npm flags or arguments.
     args: '--verbose',
     resolverId: 'NPM_RESOLVER'
