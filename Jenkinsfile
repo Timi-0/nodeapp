@@ -15,4 +15,3 @@ stage('Check Out code from git'){
         }
     }
     }
-}
