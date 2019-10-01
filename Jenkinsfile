@@ -1,5 +1,5 @@
 pipeline {
-    agent// any
+    agent any
 stages {
     stage('Check Out code from git'){
         steps{
@@ -26,10 +26,10 @@ rtNpmInstall (
     // Optional tool name from Jenkins configuration
  //   tool: NPM_TOOL,
     // Optional path to the project root. If not set, the root of the workspace is assumed as the root project path.
-    path: '.',
+    path: ".",
     // Optional npm flags or arguments.
  //   args: '--verbose',
-    resolverId: 'NPM_RESOLVER'
+    resolverId: "NPM_RESOLVER"
  
 )
     }
